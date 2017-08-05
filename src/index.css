@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.text-link {
+  color: #1E70BF;
+}
+
+.text-link:hover {
+  color: #1E70BF;
+  text-decoration-line: underline;
+}
