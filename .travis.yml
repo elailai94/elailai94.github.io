@@ -8,10 +8,10 @@ cache:
     - node_modules
 
 script:
-  - yarn run build
+  - npm run build
 
 after_success:
-  - yarn run deploy
+  - npm run deploy
 
 branches:
   only:
