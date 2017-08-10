@@ -12,6 +12,10 @@ const Links = [
     address: 'https://www.instagram.com/elailai94/',
   },
   {
+    name: 'medium',
+    address: 'https://www.medium.com/@elailai94',
+  },
+  {
     name: 'linkedin',
     address: 'https://ca.linkedin.com/in/elishalai/',
   },
