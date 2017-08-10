@@ -4,8 +4,10 @@ import {
   Divider,
   Segment,
 } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 import photo from './static/images/profile-picture.jpg';
+import CommonSettings from '../common/constants/Settings';
 import Links from './constants/Links';
 import ResumeButton from './components/ResumeButton';
 import ProfilePicture from './components/ProfilePicture';
@@ -18,11 +20,13 @@ class AboutView extends Component {
   }
 
   render() {
+    const color = CommonSettings.website.COLOR;
+
     return (
       <Segment
         inverted
         padded
-        color={'teal'}
+        color={color}
         style={styles.segment}
       >
       <Container text textAlign={'left'}>
@@ -72,9 +76,14 @@ class AboutView extends Component {
           }
         </p>
         <p style={styles.p}>
-          When not writing code, I enjoy taking photographs of interesting things
-          and taking walks in the park. I also try to travel to as many places as
-          possible and learn about different languages and cultures.
+          {
+            `When not writing code, I enjoy taking photographs of interesting
+             things and taking walks in the park. I also try to travel to as many
+             places as possible and learn about different languages and cultures.
+             Here is a `
+          }
+          <Link className={'text-link'} to={'/travel-map'}>map</Link>
+          { ` of some of the places I have visited.` }
         </p>
         <p style={styles.p}>
           My main fields of interest are distributed systems, geographical

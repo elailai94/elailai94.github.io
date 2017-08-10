@@ -12,14 +12,14 @@ class NavigationRoutes extends Component {
 
     return (
       <Menu.Menu position={'right'}>
-        {routes.map((route) => {
+        {routes.map(route => {
           const { name } = route;
           
           return (
             <NavigationRouteItem
               active={active === name}
               key={name}
-              onClick={(name) => onClick(name)}
+              onClick={name => onClick(name)}
               route={route}
             />
           );

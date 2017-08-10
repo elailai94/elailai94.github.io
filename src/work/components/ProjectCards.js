@@ -10,7 +10,7 @@ class ProjectCards extends Component {
 
     return (
       <Card.Group doubling stackable itemsPerRow={3}>
-       {projects.map((project) => {
+       {projects.map(project => {
           const { name } = project;
           
           return (

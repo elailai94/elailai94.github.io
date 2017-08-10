@@ -1,8 +1,9 @@
 import {
-    compose,
-    createStore,
-    applyMiddleware,
+  compose,
+  createStore,
+  applyMiddleware,
 } from 'redux';
+import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 
 import AppReducer from '../reducers/AppReducer';
@@ -15,10 +16,14 @@ if (process.env.NODE_ENV === 'development') {
   Store = createStore(
     AppReducer,
     undefined,
-    compose(applyMiddleware(logger)),
+    compose(applyMiddleware(thunk, logger)),
   );
 } else {
-  Store = createStore(AppReducer);
+  Store = createStore(
+    AppReducer,
+    undefined,
+    compose(applyMiddleware(thunk)),
+  );
 }
 
 export default Store;

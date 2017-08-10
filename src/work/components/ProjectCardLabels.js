@@ -10,7 +10,7 @@ class ProjectCardLabels extends Component {
 
     return (
       <Card.Meta style={styles.meta}>
-        {labels.map((label) => {
+        {labels.map(label => {
           return (
             <ProjectCardLabelItem key={label} text={label} />
           );

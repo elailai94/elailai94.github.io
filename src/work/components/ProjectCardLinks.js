@@ -10,7 +10,7 @@ class ProjectCardLinks extends Component {
 
     return (
       <Button.Group fluid>
-        {links.map((link) => {
+        {links.map(link => {
           const { name } = link;
 
           return (

@@ -6,9 +6,11 @@ const initialState = {
 
 // Case reducer for selecting a route
 function selectRoute(state = initialState, action) {
+  const { name: activeRoute } = action.payload;
+
   return {
     ...state,
-    activeRoute: action.payload.name,
+    activeRoute,
   };
 }
 

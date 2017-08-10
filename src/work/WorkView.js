@@ -4,6 +4,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 
+import CommonSettings from '../common/constants/Settings';
 import Projects from './constants/Projects';
 import ProjectCards from './components/ProjectCards';
 import logPageView from '../common/analytics/Analytics';
@@ -15,11 +16,13 @@ class WorkView extends Component {
   }
 
   render() {
+    const color = CommonSettings.website.COLOR;
+
     return (
       <Segment
         inverted
         padded
-        color={'teal'}
+        color={color}
         style={styles.segment}
       >
         <Container>

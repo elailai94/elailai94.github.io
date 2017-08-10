@@ -12,7 +12,7 @@ class SocialLinks extends Component {
 
     return (
       <Grid.Column only={only} textAlign={textAlign}>
-        {links.map((link) => {
+        {links.map(link => {
           const { name } = link;
 
           return (

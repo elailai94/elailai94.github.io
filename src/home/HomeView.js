@@ -4,6 +4,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 
+import CommonSettings from '../common/constants/Settings';
 import Adjectives from './constants/Adjectives';
 import Heading from '../common/components/Heading';
 import Subheading from './components/Subheading';
@@ -20,6 +21,7 @@ class HomeView extends Component {
   }
 
   render() {
+    const color = CommonSettings.website.COLOR;
     const minNumber = 0;
     const maxNumber = Adjectives.length - 1;
     const randomInteger = getRandomInteger(minNumber, maxNumber);
@@ -30,7 +32,7 @@ class HomeView extends Component {
       <Segment
         inverted
         padded
-        color={'teal'}
+        color={color}
         style={styles.segment}
       >        
         <Container textAlign={'center'}>
