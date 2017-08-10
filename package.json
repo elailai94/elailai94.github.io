@@ -1,7 +1,24 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Elisha Lai",
+    "email": "elisha.lai@outlook.com",
+    "url": "https://elailai94.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/elailai94/elailai94.github.io.git"
+  },
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "deploy": "surge ./build",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "google-maps-react": "^1.1.0",
     "prop-types": "^15.5.10",
@@ -20,14 +37,7 @@
     "semantic-ui-react": "^0.68.5"
   },
   "devDependencies": {
-    "react-scripts": "^1.0.11",
+    "react-scripts": "^1.0.6",
     "surge": "^0.19.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "deploy": "surge ./build",
-    "eject": "react-scripts eject"
   }
 }
