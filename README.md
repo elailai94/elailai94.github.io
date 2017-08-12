@@ -7,7 +7,7 @@
 [![Codebeat Badge](https://codebeat.co/badges/dda14dd0-2019-4a28-b0f7-67a757d39788)](https://codebeat.co/projects/github-com-elailai94-elailai94-github-io-master)
 
 ### About
-This repository contains the source code that runs my personal website. It is a complete rewrite of my old personal website using [React](https://facebook.github.io/react/) and [Semantic UI](https://www.semantic-ui.com/). It built on top of the [Create React App](https://github.com/facebookincubator/create-react-app) boilerplate.
+This repository contains the source code that runs my personal website. It is a complete rewrite of my old personal website using [React](https://facebook.github.io/react/) and [Semantic UI](https://www.semantic-ui.com/). It is built on top of the [Create React App](https://github.com/facebookincubator/create-react-app) boilerplate.
 
 ### Getting Started
 1. Install [Node.js](https://www.nodejs.org/en/) for your platform.
