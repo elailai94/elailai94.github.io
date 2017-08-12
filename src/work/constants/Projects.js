@@ -1,3 +1,4 @@
+import budgitScreenshot from '../static/images/budgit-screenshot.png';
 import cathayBallScreenshot from '../static/images/cathay-ball-screenshot.png';
 import electoralSystemVisualizationScreenshot from '../static/images/electoral-system-visualization-screenshot.png';
 import goldenJubileeAwardsOfExcellenceScholarshipScreenshot from '../static/images/golden-jubilee-awards-of-excellence-scholarship-screenshot.png';
@@ -17,7 +18,7 @@ const Projects = [
   },
   {
     name: 'Budg.it',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: budgitScreenshot, alt: 'Budg.it Screenshot' },
     technologies: [ 'InVision', 'Sketch' ],
     description: 'A high-fidelity prototype of a simple, student-focused budgeting application',
     links: [
