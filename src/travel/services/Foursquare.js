@@ -25,7 +25,7 @@ async function callEndpoint(baseURL, path, queryStrings) {
  * with how many visits and when they were last there
  */ 
 async function getVenueHistory(accessToken) {
-  const baseURL = Settings.foursquare.API_BASE_URL;
+  const baseURL = Settings.foursquare.BASE_URL;
   const path = Settings.foursquare.VENUE_HISTORY_PATH;
   const currentDate = '20170809';
   const queryStrings = {

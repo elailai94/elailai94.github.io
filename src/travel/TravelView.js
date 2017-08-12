@@ -20,10 +20,12 @@ import {
 import { getLocationsVisited } from './actions/TravelHistoryActions';
 import logPageView from '../common/analytics/Analytics';
 
-class TravelMapView extends Component {
+class TravelView extends Component {
   componentWillMount() {
+    const accessToken = Settings.foursquare.ACCESS_TOKEN;
     const { getLocationsVisited } = this.props;
-    getLocationsVisited('240DUWDOGAYYAK5TA13DKOOKQ2I1CTPZLQS0RY4XYLDGUN13');
+
+    getLocationsVisited(accessToken);
   }
 
   componentDidMount() {
@@ -96,5 +98,5 @@ function mapDispatchToProps(dispatch) {
 }
 
 const apiKey = Settings.google.API_KEY;
-const TravelMapViewWrapper = GoogleApiWrapper({ apiKey })(TravelMapView);
-export default connect(mapStateToProps, mapDispatchToProps)(TravelMapViewWrapper);
+const TravelViewWrapper = GoogleApiWrapper({ apiKey })(TravelView);
+export default connect(mapStateToProps, mapDispatchToProps)(TravelViewWrapper);

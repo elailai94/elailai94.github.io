@@ -8,5 +8,9 @@
 ### About
 An attempt to rewrite my personal website using React
 
+### Setup
+
+### Deployment
+
 ### License
 elailai94.github.io is licensed under the [MIT License](https://github.com/elailai94/elailai94.github.io/blob/master/LICENSE.md).

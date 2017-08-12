@@ -11,6 +11,10 @@ const Routes = [
     name: 'work',
     address: '/work',
   },
+  {
+    name: 'travel',
+    address: '/travel',
+  },
 ];
 
 export default Routes;

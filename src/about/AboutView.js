@@ -82,7 +82,7 @@ class AboutView extends Component {
              places as possible and learn about different languages and cultures.
              Here is a `
           }
-          <Link className={'text-link'} to={'/travel-map'}>map</Link>
+          <Link className={'text-link'} to={'/travel'}>map</Link>
           { ` of some of the places I have visited.` }
         </p>
         <p style={styles.p}>

@@ -15,7 +15,7 @@ import Footer from './common/components/Footer';
 import HomeView from './home/HomeView';
 import AboutView from './about/AboutView';
 import WorkView from './work/WorkView';
-import TravelMapView from './travelMap/TravelMapView';
+import TravelView from './travel/TravelView';
 import NotFoundView from './notFound/NotFoundView';
 import { getActiveRoute } from './common/selectors/NavigationSelectors';
 import { selectRoute } from './common/actions/NavigationActions';
@@ -49,7 +49,7 @@ class App extends Component {
             <Route exact path='/' component={HomeView} />
             <Route path='/about' component={AboutView} />
             <Route path='/work' component={WorkView} />
-            <Route path='/travel-map' component={TravelMapView} />
+            <Route path='/travel' component={TravelView} />
             <Route component={NotFoundView} />
           </Switch>
 
