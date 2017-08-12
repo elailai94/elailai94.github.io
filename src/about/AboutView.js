@@ -5,16 +5,21 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import photo from './static/images/profile-picture.jpg';
 import CommonSettings from '../common/constants/Settings';
 import Links from './constants/Links';
 import ResumeButton from './components/ResumeButton';
 import ProfilePicture from './components/ProfilePicture';
+import { selectRoute } from '../common/actions/NavigationActions';
 import logPageView from '../common/analytics/Analytics';
 
 class AboutView extends Component {
   componentDidMount() {
+    const { selectRoute } = this.props;
+
+    selectRoute('about');
     document.title = 'Elisha Lai - About';
     logPageView();
   }
@@ -108,4 +113,10 @@ const styles = {
   },
 };
 
-export default AboutView;
+function mapDispatchToProps(dispatch) {
+  return {
+    selectRoute: name => dispatch(selectRoute(name)),
+  };
+}
+
+export default connect(undefined, mapDispatchToProps)(AboutView);

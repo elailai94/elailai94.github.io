@@ -3,20 +3,17 @@ import {
   Container,
   Segment,
 } from 'semantic-ui-react';
-import {
-  Map,
-  Marker,
-  GoogleApiWrapper
-} from 'google-maps-react';
 import { connect } from 'react-redux';
 
 import CommonSettings from '../common/constants/Settings';
 import Settings from './constants/Settings';
+import TravelMap from './components/TravelMap';
 import {
   getStatus,
   getResponse,
   getError,
 } from './selectors/TravelHistorySelectors';
+import { selectRoute } from '../common/actions/NavigationActions';
 import { getLocationsVisited } from './actions/TravelHistoryActions';
 import logPageView from '../common/analytics/Analytics';
 
@@ -29,13 +26,15 @@ class TravelView extends Component {
   }
 
   componentDidMount() {
-    document.title = 'Elisha Lai - Travel Map';
+    const { selectRoute } = this.props;
+
+    selectRoute('travel');
+    document.title = 'Elisha Lai - Travel';
     logPageView();
   }
 
   render() {
     const color = CommonSettings.website.COLOR;
-    const { google } = this.props;
     const { response } = this.props;
 
     return (
@@ -46,27 +45,7 @@ class TravelView extends Component {
         style={styles.segment}
       >
         <Container>
-          <Map
-            google={google}
-            initialCenter={{ lat: 0, lng: 0 }}
-            style={styles.map}
-            zoom={2}
-          >
-            {response.map(location => {
-              const { id } = location;
-              const { name } = location;
-              const { lat } = location;
-              const { lng } = location;
-
-              return (
-                <Marker
-                  key={id}
-                  name={name}
-                  position={{lat: lat, lng: lng}}
-                />
-              );
-            })}
-          </Map>
+          <TravelMap locations={response} />
         </Container>
       </Segment>
     );
@@ -74,10 +53,6 @@ class TravelView extends Component {
 }
 
 const styles = {
-  map: {
-    height: '100%',
-    width: '85%',
-  },
   segment: {
     minHeight: '75vh',
   },
@@ -93,10 +68,9 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
+    selectRoute: name => dispatch(selectRoute(name)),
     getLocationsVisited: accessToken => dispatch(getLocationsVisited(accessToken)),
   };
 }
 
-const apiKey = Settings.google.API_KEY;
-const TravelViewWrapper = GoogleApiWrapper({ apiKey })(TravelView);
-export default connect(mapStateToProps, mapDispatchToProps)(TravelViewWrapper);
+export default connect(mapStateToProps, mapDispatchToProps)(TravelView);
