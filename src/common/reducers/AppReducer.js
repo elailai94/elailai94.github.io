@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
 import NavigationReducer from './NavigationReducer';
-import TravelHistoryReducer from '../../travelMap/reducers/TravelHistoryReducer';
+import TravelHistoryReducer from '../../travel/reducers/TravelHistoryReducer';
 
 // Root reducer for app
 const AppReducer = combineReducers({
