@@ -1,6 +1,7 @@
 import request from 'request-promise-native';
 
 import Settings from '../constants/Settings';
+import { getCurrentDate } from '../utilities/Helper';
 
 // Get the options for a request
 function getOptions(baseURL, path, queryStrings) {
@@ -27,7 +28,7 @@ async function callEndpoint(baseURL, path, queryStrings) {
 async function getVenueHistory(accessToken) {
   const baseURL = Settings.foursquare.BASE_URL;
   const path = Settings.foursquare.VENUE_HISTORY_PATH;
-  const currentDate = '20170809';
+  const currentDate = getCurrentDate();
   const queryStrings = {
     oauth_token: accessToken,
     v: currentDate,

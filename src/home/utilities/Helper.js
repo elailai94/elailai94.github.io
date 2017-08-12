@@ -1,5 +1,5 @@
 /* 
- * Returns a random integer between minNumber and maxNumber
+ * Return a random integer between minNumber and maxNumber
  * inclusively
  */
 function getRandomInteger(minNumber, maxNumber) {
@@ -8,7 +8,7 @@ function getRandomInteger(minNumber, maxNumber) {
   return Math.floor(randomNumber * (range + 1)) + minNumber;
 }
 
-// Checks if a character is a vowel
+// Check if a character is a vowel
 function isVowel(character) {
   return /[aeiouAEIOU]/.test(character);
 }

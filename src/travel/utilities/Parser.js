@@ -6,14 +6,12 @@ function parseVenueHistoryResponse(response) {
     const { name } = item.venue;
     const { lat } = item.venue.location;
     const { lng } = item.venue.location;
-    const { beenHere } = item;
     
     return {
       id,
       name,
       lat,
       lng,
-      beenHere,
     };
   });
 }
