@@ -21,6 +21,7 @@ class NavigationBar extends Component {
           secondary
           defaultActiveIndex={0}
           size={'large'}
+          stackable
           style={styles.menu}
         >
           <Menu.Item header>Elisha Lai</Menu.Item>
