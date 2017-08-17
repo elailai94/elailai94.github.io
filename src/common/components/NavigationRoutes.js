@@ -7,7 +7,6 @@ import NavigationRouteItem from './NavigationRouteItem';
 class NavigationRoutes extends Component {
   render() {
     const { active } = this.props;
-    const { onClick } = this.props;
     const { routes } = this.props;
 
     return (
@@ -19,7 +18,6 @@ class NavigationRoutes extends Component {
             <NavigationRouteItem
               active={active === name}
               key={name}
-              onClick={name => onClick(name)}
               route={route}
             />
           );
@@ -31,7 +29,6 @@ class NavigationRoutes extends Component {
 
 NavigationRoutes.propTypes = {
   active: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   routes: PropTypes.array.isRequired,
 };
 

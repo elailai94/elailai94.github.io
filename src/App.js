@@ -18,7 +18,6 @@ import WorkView from './work/WorkView';
 import TravelView from './travel/TravelView';
 import NotFoundView from './notFound/NotFoundView';
 import { getActiveRoute } from './common/selectors/NavigationSelectors';
-import { selectRoute } from './common/actions/NavigationActions';
 
 class App extends Component {
   componentDidMount() {
@@ -28,7 +27,6 @@ class App extends Component {
   render() {
     const color = Settings.website.COLOR;
     const { activeRoute } = this.props;
-    const { selectRoute } = this.props;
 
     return (
       <BrowserRouter>
@@ -42,7 +40,6 @@ class App extends Component {
           <NavigationBar
             activeRoute={activeRoute}
             navigationRoutes={Routes}
-            onClick={name => selectRoute(name)}
           />
           
           <Switch>
@@ -72,10 +69,4 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    selectRoute: name => dispatch(selectRoute(name)),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, undefined)(App);

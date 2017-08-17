@@ -5,6 +5,7 @@ import goldenJubileeAwardsOfExcellenceScholarshipScreenshot from '../static/imag
 import jottoScreenshot from '../static/images/jotto-screenshot.png';
 import monSheongFoundationScreenshot from '../static/images/mon-sheong-foundation-screenshot.png';
 import monSheongTelethonScreenshot from '../static/images/mon-sheong-telethon-screenshot.png';
+import recipezyScreenshot from '../static/images/recipezy-screenshot.png';
 
 const Projects = [
   { 
@@ -128,7 +129,7 @@ const Projects = [
   },
   {
     name: 'Recipezy',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: recipezyScreenshot, alt: 'Recipezy Screenshot' },
     technologies: [ 'JavaScript', 'React Native', 'Redux', 'Spoonacular API' ],
     description: 'iOS and Android apps to help users discover new recipes based on dietary preferences while using as many ingredients in their inventory as possible',
     links: [

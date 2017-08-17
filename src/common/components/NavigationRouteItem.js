@@ -8,14 +8,12 @@ class NavigationRouteItem extends Component {
     const { active } = this.props;
     const { address } = this.props.route;
     const { name } = this.props.route;
-    const { onClick } = this.props;
 
     return (
       <Menu.Item
         active={active}
         as={Link}
         name={name}
-        onClick={() => onClick(name)}
         to={address}
       />
     );
@@ -24,7 +22,6 @@ class NavigationRouteItem extends Component {
 
 NavigationRouteItem.propTypes = {
   active: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
   route: PropTypes.object.isRequired,
 };
 
