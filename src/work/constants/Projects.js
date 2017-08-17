@@ -1,6 +1,7 @@
 import budgitScreenshot from '../static/images/budgit-screenshot.png';
 import cathayBallScreenshot from '../static/images/cathay-ball-screenshot.png';
 import electoralSystemVisualizationScreenshot from '../static/images/electoral-system-visualization-screenshot.png';
+import floodItScreenshot from '../static/images/floodit-screenshot.png';
 import goldenJubileeAwardsOfExcellenceScholarshipScreenshot from '../static/images/golden-jubilee-awards-of-excellence-scholarship-screenshot.png';
 import jottoScreenshot from '../static/images/jotto-screenshot.png';
 import monSheongFoundationScreenshot from '../static/images/mon-sheong-foundation-screenshot.png';
@@ -55,7 +56,7 @@ const Projects = [
   },
   {
     name: 'FloodIt',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: floodItScreenshot, alt: 'FloodIt Screenshot' },
     technologies: [ 'C++', 'X11 Library' ],
     description: 'A clone of the simple tile-matching puzzle game',
     links: [
