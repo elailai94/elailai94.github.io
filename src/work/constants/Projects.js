@@ -7,6 +7,7 @@ import jottoScreenshot from '../static/images/jotto-screenshot.png';
 import monSheongFoundationScreenshot from '../static/images/mon-sheong-foundation-screenshot.png';
 import monSheongTelethonScreenshot from '../static/images/mon-sheong-telethon-screenshot.png';
 import recipezyScreenshot from '../static/images/recipezy-screenshot.png';
+import squareSwapper5000Screenshot from '../static/images/squareswapper5000-screenshot.png';
 
 const Projects = [
   { 
@@ -140,7 +141,7 @@ const Projects = [
   },
   {
     name: 'SquareSwapper5000',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: squareSwapper5000Screenshot, alt: 'SquareSwapper5000 Screenshot' },
     technologies: [ 'C++', 'Ncurses', 'X11 Library' ],
     description: 'A simple tile-matching puzzle game inspired by Candy Crush and Bejeweled',
     links: [
