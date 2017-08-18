@@ -1,3 +1,4 @@
+import breakoutScreenshot from '../static/images/breakout-screenshot.png';
 import budgitScreenshot from '../static/images/budgit-screenshot.png';
 import cathayBallScreenshot from '../static/images/cathay-ball-screenshot.png';
 import electoralSystemVisualizationScreenshot from '../static/images/electoral-system-visualization-screenshot.png';
@@ -12,7 +13,7 @@ import squareSwapper5000Screenshot from '../static/images/squareswapper5000-scre
 const Projects = [
   { 
     name: 'Breakout',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: breakoutScreenshot, alt: 'Breakout Screenshot' },
     technologies: [ 'C++', 'X11 Library' ],
     description: 'A clone of the simple brick-breaking arcade game by Atari',
     links: [
