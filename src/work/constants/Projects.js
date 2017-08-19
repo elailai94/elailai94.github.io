@@ -9,6 +9,7 @@ import jottoScreenshot from '../static/images/jotto-screenshot.png';
 import joulesScreenshot from '../static/images/joules-screenshot.png';
 import monSheongFoundationScreenshot from '../static/images/mon-sheong-foundation-screenshot.png';
 import monSheongTelethonScreenshot from '../static/images/mon-sheong-telethon-screenshot.png';
+import pubbleScreenshot from '../static/images/pubble-screenshot.png';
 import recipezyScreenshot from '../static/images/recipezy-screenshot.png';
 import squareSwapper5000Screenshot from '../static/images/squareswapper5000-screenshot.png';
 
@@ -124,7 +125,7 @@ const Projects = [
   },
   {
     name: 'Pubble',
-    image: { src: backgroundScreenshot, alt: 'Pubble Screenshot' },
+    image: { src: pubbleScreenshot, alt: 'Pubble Screenshot' },
     technologies: [ 'Express', 'JavaScript', 'Node.js', 'Pebble SDK','XE Currency Data API', 'Zomato API' ],
     description: 'A Pebble app to help users to find the price of meals in restaurants near their current location',
     links: [
