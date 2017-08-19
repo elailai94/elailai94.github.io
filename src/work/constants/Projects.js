@@ -1,3 +1,4 @@
+import backgroundScreenshot from '../static/images/background-screenshot.png';
 import breakoutScreenshot from '../static/images/breakout-screenshot.png';
 import budgitScreenshot from '../static/images/budgit-screenshot.png';
 import cathayBallScreenshot from '../static/images/cathay-ball-screenshot.png';
@@ -41,7 +42,7 @@ const Projects = [
   },
   {
     name: 'Distributed System',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: backgroundScreenshot, alt: 'Distributed System Screenshot' },
     technologies: [ 'C++' ],
     description: 'A simple distributed system to execute remote procedure calls',
     links: [
@@ -114,7 +115,7 @@ const Projects = [
   },
   {
     name: 'OS161',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: backgroundScreenshot, alt: 'OS161 Screenshot' },
     technologies: [ 'C' ],
     description: 'An educational operating system developed by the Systems Research Group at Harvard University',
     links: [
@@ -123,7 +124,7 @@ const Projects = [
   },
   {
     name: 'Pubble',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: backgroundScreenshot, alt: 'Pubble Screenshot' },
     technologies: [ 'Express', 'JavaScript', 'Node.js', 'Pebble SDK','XE Currency Data API', 'Zomato API' ],
     description: 'A Pebble app to help users to find the price of meals in restaurants near their current location',
     links: [
@@ -152,7 +153,7 @@ const Projects = [
   },
   {
     name: 'The Go-Back-N Protocol',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: backgroundScreenshot, alt: 'The Go-Back-N Protocol Screenshot' },
     technologies: [ 'Java' ],
     description: 'Sender and receiver programs to transfer a text file between themselves across an unreliable network using the Go-Back-N protocol',
     links: [
@@ -161,7 +162,7 @@ const Projects = [
   },
   {
     name: 'WLP4C',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: backgroundScreenshot, alt: 'WLP4C Screenshot' },
     technologies: [ 'Assembly', 'C++' ],
     description: 'A compiler for the WLP4 programming language, which is a subset of the C/C++ programming language',
     links: [
