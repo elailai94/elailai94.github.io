@@ -5,6 +5,7 @@ import electoralSystemVisualizationScreenshot from '../static/images/electoral-s
 import floodItScreenshot from '../static/images/floodit-screenshot.png';
 import goldenJubileeAwardsOfExcellenceScholarshipScreenshot from '../static/images/golden-jubilee-awards-of-excellence-scholarship-screenshot.png';
 import jottoScreenshot from '../static/images/jotto-screenshot.png';
+import joulesScreenshot from '../static/images/joules-screenshot.png';
 import monSheongFoundationScreenshot from '../static/images/mon-sheong-foundation-screenshot.png';
 import monSheongTelethonScreenshot from '../static/images/mon-sheong-telethon-screenshot.png';
 import recipezyScreenshot from '../static/images/recipezy-screenshot.png';
@@ -85,7 +86,7 @@ const Projects = [
   },
   {
     name: 'Joules',
-    image: { src: monSheongFoundationScreenshot, alt: 'Mon Sheong Foundation Screenshot' },
+    image: { src: joulesScreenshot, alt: 'Joules Screenshot' },
     technologies: [ 'Ruby' ],
     description: 'A library (gem) for providing Physics formulas',
     links: [
