@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import siteLogo from './common/static/images/site-logo.png';
 import Routes from './common/constants/Routes';
 import Links from './common/constants/Links';
 import Settings from './common/constants/Settings';
@@ -40,8 +41,9 @@ class App extends Component {
           <NavigationBar
             activeRoute={activeRoute}
             navigationRoutes={Routes}
+            siteLogo={siteLogo}
           />
-          
+
           <Switch>
             <Route exact path='/' component={HomeView} />
             <Route path='/about' component={AboutView} />

@@ -7,7 +7,7 @@ import {
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import photo from './static/images/profile-picture.jpg';
+import profilePicture from './static/images/profile-picture.jpg';
 import CommonSettings from '../common/constants/Settings';
 import Links from './constants/Links';
 import ResumeButton from './components/ResumeButton';
@@ -35,7 +35,7 @@ class AboutView extends Component {
         style={styles.segment}
       >
       <Container text textAlign={'left'}>
-        <ProfilePicture src={photo} />
+        <ProfilePicture src={profilePicture} />
         <Divider hidden />
         <p style={styles.p}>
           {
@@ -52,7 +52,7 @@ class AboutView extends Component {
           <a className={'text-link'} href={Links.samerAlKiswany}>
             Samer Al-Kiswany
           </a>
-          {  
+          {
             ` to conduct experiments on the scalability of various distributed
              publish-subscribe messaging systems.`
           }

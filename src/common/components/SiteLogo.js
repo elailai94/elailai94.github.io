@@ -2,24 +2,23 @@ import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-class ProfilePicture extends Component {
+class SiteLogo extends Component {
   render() {
     const { src } = this.props;
 
     return (
       <Image
-        alt={'Profile Picture'}
+        alt={'Site Logo'}
         centered
-        shape={'circular'}
-        size={'small'}
+        size={'mini'}
         src={src}
       />
     );
   }
 }
 
-ProfilePicture.propTypes = {
+SiteLogo.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-export default ProfilePicture;
+export default SiteLogo;
