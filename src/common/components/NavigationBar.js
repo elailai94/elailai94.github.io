@@ -26,7 +26,7 @@ class NavigationBar extends Component {
           style={styles.menu}
         >
           <Menu.Item style={styles.menuItem}>
-            <SiteLogo src={siteLogo}/>
+            <SiteLogo src={siteLogo} />
           </Menu.Item>
           <NavigationRoutes
             active={activeRoute}
