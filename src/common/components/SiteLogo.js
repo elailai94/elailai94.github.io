@@ -10,7 +10,7 @@ class SiteLogo extends Component {
       <Image
         alt={'Site Logo'}
         centered
-        size={'massive'}
+        size={'mini'}
         src={src}
       />
     );
