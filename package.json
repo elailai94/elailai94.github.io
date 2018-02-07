@@ -22,8 +22,8 @@
   "dependencies": {
     "google-maps-react": "^1.1.2",
     "prop-types": "^15.6.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-ga": "^2.4.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
@@ -33,7 +33,7 @@
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",
     "semantic-ui-css": "^2.2.14",
-    "semantic-ui-react": "^0.68.5"
+    "semantic-ui-react": "^0.78.2"
   },
   "devDependencies": {
     "react-scripts": "^1.1.0",
